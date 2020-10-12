@@ -1,0 +1,51 @@
+//Ejercicio cadenas
+  /**
+  * Nombre: cadenas.swift
+  * Objetivo: muestra el uso de cadenas en swift
+  * Fecha: 29/09/20
+  Autor: Josué Vargas Medina
+  */
+  //Concatenacion de cadenas
+  var saludo = "Hola"
+  var apellido = " Vargas"
+  let concat = saludo + " " + apellido
+  print(concat)
+
+  //Otra manera de declara cadenas
+  var apellido2 = String()
+  apellido2 = "Medina"
+  //Preguntamos si la cadena esta vacia regresa un booleano
+  //Usamos la estrucutra if
+  if apellido2.isEmpty == true {
+  print("La cadena apellido2 esta vacia")
+  }else {
+  print("La cadena apellido2 tiene \(apellido2)")
+  }
+
+  var res:String
+  //Convertir a minuscula
+  res = apellido2.lowercased()
+  print(res)
+  //Convertir a mayuscula
+  res = apellido2.uppercased()
+  print(res)
+  //Agregar una cadena a otra con la funcion append
+  res = " "
+  apellido.append(apellido2)
+  print(apellido)
+  res.append(apellido)
+  print(res)
+
+  var contiene:Bool
+  var sub:String 
+
+  apellido = " "
+  apellido.append("Vargas")
+  contiene = apellido.contains("ñ")  
+  //Buscar una subcadena dentro de otra
+  if contiene == true {
+    print("Si lo contiene")
+  }else{
+    print("No lo contiene")
+  }
+

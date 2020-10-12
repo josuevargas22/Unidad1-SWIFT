@@ -1,0 +1,26 @@
+//Ejercicio funciones
+  //FUncion simple
+   func mensaje(){
+  //   //Cuerpo de residencia
+     print("Hola mundo, desde la funcion cadena")
+   }
+
+  //Funcion que recibe el argumento e imprime un mensaje
+   func printMyName(nombre:String){
+    print("Soy la funcion printMyName e imprimo el argumento \(nombre)")
+  }
+
+  Invocamos ls funcion mensaje
+   mensaje()
+  
+   //Invocamos la funcion printMyName
+  printMyName()
+
+  //Funcion con valores de retorno
+ func getMessage() -> String{
+     return "Hola, Souy una funcion que regresa una cadena"
+   }
+
+  //Invocamos la funcion getMessage
+   print(getMessage())
+

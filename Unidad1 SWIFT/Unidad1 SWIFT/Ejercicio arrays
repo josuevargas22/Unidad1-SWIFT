@@ -1,0 +1,73 @@
+//Ejercicio arrays
+  /**
+  * Nombre: arrays.swift
+  * Objetivo: muestra el uso de arrays en swift
+  * Fecha: 05/10/20
+  Autor: Josué Vargas Medina
+  */
+
+  //Manejo de arrays en swift
+
+  let nombre = "Josué"
+  let apellido1 = "Vargas"
+  let apellido2 = "Medina"
+  let edad = "21"
+
+  //Todos los elementos del array deben ser del mismo tipo
+  var primerArray = Array<String>() //Arreglo de tipo String vacio
+  //Agregando elementos
+  primerArray.append(nombre)
+  primerArray.append(apellido1)
+  primerArray.append(apellido2)
+  primerArray.append(edad)
+  //Imprimir los elementos del arreglo, mediante un ciclo for each
+  for elemento in primerArray{
+      print(elemento)
+  }
+  //Imprimir un solo elemento por su indice
+  print("El segundo elemento del array es: \(primerArray[1])")
+  //Modificamos el segundo elemento del array
+  primerArray[1] = "Vargas"
+  print("El elemento es: \(primerArray[1])")
+  //Agregar mas elementos al array
+  primerArray.append(contentsOf: ["Estudiante", "Informatica"])
+  print("Agregar nuevos elementos:")
+  for elemento in primerArray{
+      print(elemento)
+  }
+  //Eliminar el tercer elemento
+  primerArray.remove(at: 2)
+  //Eliminar el primer elemento
+  primerArray.removeFirst()
+  //Eliminar el ultimo elemento
+  primerArray.removeLast()
+  //Eliminar TODOS los elementos: primerArray.removeAll()
+  if(primerArray.count > 0){
+      print("Eliminar elementos:")
+      for elemento in primerArray{
+          print(elemento)
+      }    
+  }else{
+      print("El arreglo esta vacio")
+  }
+
+  //Arreglo no mutable
+  var numeros = [34,62,23,18,53]
+  numeros.sort()
+  print(numeros)
+  //Primer elemento del arreglo
+  //print("El primer elemento: \(numeros.first)")
+  //Ultimo elemento del arreglo
+  //print("El ultimo elemento: \(numeros.last)")
+
+  //Matriz
+  var matriz2x3 = [
+      [5,56,71],
+      [-1,10,21]
+  ]
+  //Imprimir los elementos de la matriz
+  print("Elementos de la matriz:")
+  for elemento in matriz2x3{
+      print(elemento)
+  }
+

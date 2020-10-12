@@ -1,0 +1,54 @@
+//Ejercicio Operasiones basicas
+   func sumar(num1:Int, num2:Int) -> Int{
+     return num1 + num2
+   }
+
+   func restar(num1:Int, num2:Int) -> Int{
+    return num1 - num2
+  }
+
+  func multiplicar(num1:Int, num2:Int) -> Int{
+     return num1 * num2
+  }
+
+   func dividir(num1:Int, num2:Int) -> Float{
+    return Float (num1) / Float (num2)
+   }
+
+   func comparar(num1:Int, num2:Int) -> String{
+     if num1 > num2{
+     return "num1 es mayor a num2"
+    }else if num2 > num1{
+     return "num1 es menor a num2"
+    }else{
+      return "num1 es igual a num2"
+     }
+   }
+
+  func contar(num1:Int, num2:Int){    
+    if num1 > num2{
+      //Si num1 es menor a num2 contaremos de manera ascendente
+      for i in stride(from: num1, to: num2, by: -1) {
+      print("Valor \(i)")
+      }
+    }else if num2 > num1{
+      //SI num1 es mayor a num2 contaremos demanera descendente
+      for i in stride(from: num2, to: num1, by: -1) {
+        print("Valor \(i)")
+      }
+    }else if num1 == num2{
+      print("Error")
+    }
+  }
+
+  contar(num1:5, num2:2)
+  contar(num1:4, num2:4)
+  contar(num1:2, num2:8)
+   print("La suma es: \(sumar(num1:2, num2:3))")
+   print("La resta es: \(restar(num1:6, num2:8))")
+   print("La multiplicacion es: \(multiplicar(num1:6, num2:-7))")
+   print("La division es: \(dividir(num1:5, num2:-6))")
+   print("Los numeros num1 y num2 son: \(comparar(num1:5, num2:-6))")
+   print("Los numeros num1 y num2 son: \(comparar(num1:7, num2:10))")
+   print("Los numeros num1 y num2 son: \(comparar(num1:3, num2:3))")  
+

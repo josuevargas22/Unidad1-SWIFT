@@ -1,0 +1,32 @@
+//Ejercicio circunferencia
+  /**
+  * Nombre: circunferencia.swift
+  * Objetivo: Utiliza la definición de una constante para PI y el valor de radio asigna un valor tipo float
+  Autor: Josué Vargas Medina
+  */
+  var a:Float = 2
+  var b:Float = 3
+  var c:Float = 4
+  var d:Float = 5
+
+  let suma = a+b
+  let resta = a-b
+  let mul = b*c
+  let div = c/d
+  print("suma: \(suma)")
+  print("resta: \(resta)")
+  print("multiplicacion: \(mul)")
+  print("division: \(div)")
+
+  var op4:Float
+
+  let op1 = (b+d)/c
+  let op2 = b+c*a-d
+  let op3 = b+c-d
+  op4 = (Float((b+c)/d-a*c))
+
+  print(op1)
+  print(op2)
+  print(op3)
+  print(op4)
+

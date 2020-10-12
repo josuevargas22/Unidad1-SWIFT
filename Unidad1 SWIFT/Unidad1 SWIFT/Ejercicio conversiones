@@ -1,0 +1,40 @@
+ //Ejercicio conversiones
+  /**
+  * Nombre: converciones.swift
+  * Objetivo: muestra el uso de las converciones de tipos de datos en swift
+  * Fecha: 28/09/20
+  Autor: Josué Vargas Medina
+  */
+
+  var s:String = "2020"
+  var i:Int = 125
+  var d:Double = 3.575
+
+  //Convertir de entero a string
+  var s1:String = " "
+  s1 = String(i)
+  print("La conversión entero a string es: \(s1)")
+
+  //Convertir de string a entero
+  var i1:Int = 0
+  i1 = Int(s)!
+  print("La conversión de string a entero es: \(i1)")
+
+  //Convertir de Double a String
+  s1 = String(d)
+  print("La conversión de Double a String es: \(s1)")
+
+  //Convertir de String a Double
+  var d1:Double
+  d1 = Double(s)!
+  print("La conversión de String a Duble es: \(d1)")
+
+  //Convertir de Int a Double
+  d1 = Double(i)
+  print("La conversión de Int a Double es: \(d1)")
+
+  //Convertir de Double a Int
+  i1 = Int(d)
+  print("La conversión de Double a Int es: \(i1)")
+
+

@@ -1,0 +1,40 @@
+//Ejercicio switch
+  /**
+  * Nombre: switch.swift
+  * Objetivo: muestra el uso de la estructura switch en swift
+  * Fecha: 05/10/20
+  Autor: Josué Vargas Medina
+  */
+
+  //Definir una constante
+  let pais = "México"
+
+  //Estructura switch
+  switch pais {
+      case "México", "Argentina", "Perú", "Colombia":
+          print("El idioma es español")
+      case "USA":
+          print("El idioma es inglés")
+      case "Cánada":
+          print("El idioma es inglés o frances")
+      default:
+          print("Idioma desconocido")               
+  }
+
+  //Switch con datos númericos
+  let edad = 102
+  switch edad {
+      case 0, 1, 2:
+          print("Es un bebé")
+      case 3...10:
+          print("Es un niño")
+      case 11..<18:
+          print("Es un adolecente")
+      case 18..<60:
+          print("Es un adulto")
+      case 60..<100:
+          print("Eres un adulto mayor")
+      default:
+          print("Edad no determinada")
+  }
+
